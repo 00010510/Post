@@ -2,6 +2,91 @@ extends layout.pug
 
 block Navigation
   
-
- .container 
-  img(src="static/images/e-comm.png", alt="e-comm")
+ body 
+  .container 
+     img(src="static/images/banner.jpg", alt="e-comm" class="image")
+     .text 
+      h1#text_box Meet your next favourite book.
+  .top 
+   h2#top_box  Most popular books throught the decades.
+  .category_txt
+    label.cat_txt Fantasy & Fiction books ->
+ <div class="container_1">
+  table 
+     tbody 
+       tr 
+         td 
+           a(href="/", target="_blank") 
+            img(src="static/images/fantasy/book1_fan.jpg", alt="harry")
+           .figcap 
+             figcaption Harry Potter and <br>the Philosopher's Stone <br> (1997).
+         td
+           a(href="/", target="_blank") 
+            img(src="static/images/fantasy/book2_fan.jpg", alt="Night Circus")
+           .figcap 
+             figcaption  Night Circus.<br> (2011).
+         td
+           a(href="/", target="_blank") 
+            img(src="static/images/fantasy/book3_fan.jpg", alt="LordOfRings")
+           .figcap  
+             figcaption The Lord of The Rings.<br> (1954).
+         td
+           a(href="/", target="_blank") 
+            img(src="static/images/fantasy/book4_fan.jpg", alt="TheSword")
+           .figcap  
+             figcaption The Sword in the Stone.<br> (1938).
+         td
+           a(href="/", target="_blank") 
+            img(src="static/images/fantasy/book5_fan.jpg", alt="GameofThrones")
+           .figcap  
+             figcaption  Game of Thrones.<br> (1996).
+  </div>
+  // Next table of images
+  .category_txt
+   label.cat_txt Classic books ->
+  <div class="container_1">
+  table 
+     tbody 
+       tr 
+         td 
+           a(href="/", target="_blank") 
+            img(src="static/images/classic/book1_cl.jpg", alt="Pride")
+           .figcap 
+             figcaption Pride and Prejudice.<br> (1813).
+         td
+           a(href="/", target="_blank") 
+            img(src="static/images/classic/book2_cl.jpg", alt="Gatsby")
+           .figcap 
+             figcaption  The Great Gatsby.<br> (1925).
+         td
+           a(href="/", target="_blank") 
+            img(src="static/images/classic/book3_cl.jpg", alt="1984")
+           .figcap  
+             figcaption Nineteen Eighty-Four.<br> (1949).
+         td
+           a(href="/", target="_blank") 
+            img(src="static/images/classic/book4_cl.jpg", alt="AnnaK")
+           .figcap  
+             figcaption Anna Karenina.<br> (1878).
+         td
+           a(href="/", target="_blank") 
+            img(src="static/images/classic/book5_cl.jpg", alt="Crime&Punishment")
+           .figcap  
+             figcaption Crime and Punishment.<br> (1866).
+  </div>
+      .next_ 
+        a(href='/ategories' id="explore") Explore more...
+      <div class="line_bottom"> 
+        <div class="holder"> 
+          <section class="line_icons">
+           <img src="static/images/icons/Rate.png" style="width: 70px; height: 70px" class="icons"><span class="line_ic1"> Rate the books. </span>
+          </section>
+          <section class="line_icons">
+           <img src="static/images/icons/comment.png" style="width: 70px; height: 70px" class="icons"><span class="line_ic2"> Leave your review. </span>
+          </section>
+          <section class="line_icons">
+           <img src="static/images/icons/Explore.png" style="width: 70px; height: 70px" class="icons"><span class="line_ic3"> Find your next book. </span>
+          </section>
+        </div>
+      <div>
+        

@@ -1,3 +1,12 @@
+:root{
+    --main-bg-color:rgb(250, 235, 215);
+    --main-color: rgb(244, 246, 246);
+    --secondly-color: rgb(33,33,33);
+    --thirdly-color: rgb(169,169,169);
+    --forthly-color:rgb(149, 69, 53); 
+}
+
+
 html{
     scroll-behavior: smooth;
     font-family: 'Montserrat', sans-serif;
@@ -9,6 +18,7 @@ html{
 }
 body{
     margin-bottom: 0;
+    background-color: rgb(250, 235, 215);
 }
 .logo {
     margin: 0 10px 0 30px;
@@ -16,47 +26,183 @@ body{
     text-transform: uppercase;
     font-weight: 700;
     line-height: 75px;
-    color: #F8F8FF;
+    color: var(--main-color);
     
 }
-.navbar{
+header{
     height: 75px;
     width: 100%;
-    background-color: #ff3333;
+    background-color: rgb(149, 69, 53); 
     -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
-    position: fixed;
-    right: 0;
-    left: 0;
-    z-index: 999;
 }
 .navb{
     float: right;
     line-height: 75px;
-   
 }
 .nav{
     text-decoration: none;
-    color: #F8F8FF;
-    margin-left: 15px;
+    color: rgb(244, 246, 246);
+    margin-left: 10px;
     font-size: 20pt;
-    font-weight: 500;
+    font-weight: 700;
     margin-right: 30px;
     text-transform: uppercase;
     transition: all 0.3s;
 }
 .nav:hover{
-    color:#ff3333;
+    color: rgb(250, 235, 215);
 }
-input{
-    width: 400px;
-    height: 37.5px;
-    font-size: 12pt;
-    border:2px solid black;
-    margin-right: 15px;
-}
+
 #box{
-   border: 2px solid #333333;
+   border: 2px solid var(--secondly-color);
    border-radius: 5px;
-   background: #333333;
+   background: 	rgb(169,169,169);
+   color:rgb(244, 246, 246);    
+}
+#box:hover{
+    color: 	rgb(169,169,169);
+}
+/*Body starts*/
+.container {
+    align-items: center;
+    justify-content: center;
+   
+}
+.image{
+   margin-top: 0px;
+   width: 100%;
+}
+.text{
+    margin-left: 30%;
+    position: absolute;
+    top: 125px;
+    color:rgb(33,33,33);
+    text-transform: uppercase;
+    font-style: italic;
+    padding: 16px 30px;
+    text-shadow: 4px 6px 3px var(--thirdly-color);
+    font-weight: 700;
+    font-size: 15pt;
+}
+#text_box{
+    border: 2px solid var(--forthly-color);
+    border-radius: 5px;
+    background: var(--main-color);
+}
+/*Most Popular Table*/
+.top{
+    text-align: center;
+    margin-top:15px; 
+    font-size: 15pt;
+    color: var(--secondly-color);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+#top_box{
+    background: var(--main-color);
+    -webkit-box-shadow: 0px 14px 35px -3px rgba(34, 60, 80, 0.48);
+    -moz-box-shadow: 0px 14px 35px -3px rgba(34, 60, 80, 0.48);
+    box-shadow: 0px 14px 35px -3px rgba(34, 60, 80, 0.48);
+    border: 2px solid var(--forthly-color);
+    padding-top: 10px;
+    padding-bottom:10px;
+}
+.category_txt{
+    text-align: left;
+    margin-top: 35px;
+    text-transform: none;
+    margin-left: 15px;
+    font-size: 20pt;
+    margin-right: 0;
+}
+.cat_txt{
+    border: 2px solid rgb(33,33,33);
+    background-color: rgb(149, 69, 53);
+    font-size: 20pt;
+    font-weight: 700;
+    color: rgb(244, 246, 246);
+}
+/*Link to thr categories*/
+.next_{
+    text-align: center;
+} 
+#explore{
+    text-decoration: none;
+    font-size: 20pt;
+    font-weight: 700;
+    color: var(--secondly-color);
+    border: 2px solid var(--forthly-color);
+    border-radius: 5px;
+    background: var(--main-color);   
+}
+/* Show the features of the web-site using font-awesome*/
+.line_bottom {
+   margin-top: 40px;
+   width: 100%;
+   height: 150px;
+   background: var(--forthly-color);
+   
+}
+.line_icons{
+    width: 350px;
+    color: var(--main-color);
+    display: inline-flex;
+}
+.line_icons span{
+    font-size: 15pt;
+    position: relative;
+    margin-top: 75px;
+    float: left;
+    text-align: left;
+    font-weight: 700;
+}
+.line_ic1{
+    font-size: 15pt;
+    position: relative;
+    margin-top: 50px !important;
+    margin-left: 10px;
+    float: left;
+    text-align: left;
+}
+.line_ic2{
+    font-size: 15pt;
+    position: relative;
+    margin-top: 50px !important;
+    margin-left: 10px;
+    float: left;
+    text-align: left;
+}
+.line_ic3{
+    font-size: 15pt;
+    position: relative;
+    margin-top: 50px !important;
+    margin-left: 10px;
+    float: left;
+    text-align: left;
+}
+.icons{
+    margin-top: 30px;
+    margin-left: 55px;
+}
+.holder{
+    padding-left: 150px;
+    padding-right: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+/*-- Category page---*/
+.searchbar {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.search_bar{
+  
+   width: 400px;
+   height: 40px;
+   font-size: 20pt;
 }
