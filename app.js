@@ -12,6 +12,12 @@ app.get('/', (req, res) => {
 app.get('/categories', (req, res) => {
     res.render('categories')
 })
+app.get('/about', (req, res) => {
+    res.render('about')
+})
+app.get('/Sing&Login', (req, res) => {
+    res.render('Sing&Login')
+})
 
 app.listen(5000, err =>{
     if(err) console.log(err)
