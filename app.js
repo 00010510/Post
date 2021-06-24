@@ -1,4 +1,4 @@
-const express = require('express')
+    const express = require('express')
 const app = express()
 
 app.set('view engine', 'pug')
@@ -15,8 +15,14 @@ app.get('/categories', (req, res) => {
 app.get('/about', (req, res) => {
     res.render('about')
 })
-app.get('/Sing&Login', (req, res) => {
-    res.render('Sing&Login')
+app.get('/Login', (req, res) => {
+    res.render('Login')
+})
+app.get('/Sign', (req, res) => {
+    res.render('Sign')
+})
+app.get('/book1_fan', (req, res) => {
+    res.render('book1_fan')
 })
 
 app.listen(5000, err =>{

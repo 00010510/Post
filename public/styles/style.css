@@ -10,16 +10,17 @@
 html{
     scroll-behavior: smooth;
     font-family: 'Montserrat', sans-serif;
+    background-color: var(--main-color);
 }
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
+html *{
+    margin-left: auto;
+   margin-right: auto;
+   scroll-behavior: smooth;
 }
 body{
     margin-bottom: 0;
-    background-color: var(--main-color);
-}
+    min-height: 100vh;
+}   
 .logo {
     margin: 0 10px 0 30px;
     font-size: 30pt;
@@ -136,7 +137,7 @@ header{
     border-radius: 5px;
     background: var(--main-bg-color);   
 }
-/* Show the features of the web-site using font-awesome*/
+/* Show the features of the web-site*/
 .line_bottom {
    margin-top: 40px;
    width: 100%;
@@ -145,17 +146,18 @@ header{
    
 }
 .line_icons{
-    width: 350px;
+    width: 400px;
     color: var(--main-color);
     display: inline-flex;
 }
 .line_icons span{
     font-size: 15pt;
     position: relative;
-    margin-top: 75px;
+    margin-top: 40px;
     float: left;
     text-align: left;
     font-weight: 700;
+  
 }
 .line_ic1{
     font-size: 15pt;
@@ -169,7 +171,7 @@ header{
     font-size: 15pt;
     position: relative;
     margin-top: 50px !important;
-    margin-left: 10px;
+    margin-left: 20px;
     float: left;
     text-align: left;
 }
@@ -182,49 +184,39 @@ header{
     text-align: left;
 }
 .icons{
-    margin-top: 30px;
+    width: 60px;
+    height: 60px;
+    margin-top: 50px;
     margin-left: 55px;
 }
 .holder{
-    padding-left: 150px;
-    padding-right: 150px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+   margin-left: 600px;
 }
 /*-- Category page---*/
-.searchbar {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-}
-.search_bar{
-   background: var(--main-bg-color);
-   width: 400px;
-   height: 40px;
-   font-size: 20pt;
-}
+
+
+
+
+
+
+
+
 /*-- ABOUT US---*/
 .container_ab{
     text-align: center;
-    margin-top: -700px;
-    display: flex;
-    justify-content: center;
-    
+    position: absolute;
+    top: 260px;
+    left:360px;
 }
 .txt_frame{
-   margin-top: 15px;
-   margin-bottom: 15px;
    width: 1200px;
    background: var(--main-bg-color);
    padding-top:20px;
    padding-bottom: 20px;
    border: 2px solid var(--secondly-color);
    -webkit-box-shadow: 0px 14px 35px -3px rgba(34, 60, 80, 0.48);
-    -moz-box-shadow: 0px 14px 35px -3px rgba(34, 60, 80, 0.48);
-    box-shadow: 0px 14px 35px -3px rgba(34, 60, 80, 0.48);
+   -moz-box-shadow: 0px 14px 35px -3px rgba(34, 60, 80, 0.48);
+   box-shadow: 0px 14px 35px -3px rgba(34, 60, 80, 0.48);
 }
 .title_ab_p{
     margin-top: 10px;
@@ -240,10 +232,9 @@ header{
 }
 .container_ref{
     text-align: center;
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-
+    left: 560px;
+    top: 560px;
+    position: absolute;
 }
 .txt_frame_1{
     width: 800px;
@@ -258,4 +249,89 @@ header{
 }
 .link{
     color: var(--secondly-color);
+}
+/*FOOTER*/
+footer{
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px 25px ;
+    overflow: hidden;
+    background: var(--main-bg-color);
+    position: static;
+}
+.quick_links{
+    margin: 10px;
+}
+.nav_ft{
+    margin-left: 20px;
+    font-size: 15pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s;
+    color: var(--secondly-color);
+}
+.nav_ft:hover{
+    color:var(--main-bg-color);
+}
+.media{
+    margin-top: 10px;
+}
+.icon_media{
+    width: 30px;
+    height: 30px;
+}
+.copyrights {
+    text-align: center;
+    margin-top: 10px;
+}
+.copyr{
+    font-weight: bold;
+    font-size: 15pt;
+}
+.text_ft{
+    font-weight: 600;
+}
+/* books   */
+.book_info img{
+   width: 300px;
+   height: 420px;
+   float: left;
+   padding: 40px;
+   margin-left: 30px;
+
+}
+.description_books{
+   width: 1450px;
+   height: 420px;
+   margin-left: 100px;
+  
+}
+.title_b{
+    font-size: 25pt;
+    font-weight: 700;  
+    margin-bottom: 20px;
+    margin-top: 70px;
+}
+.description{
+    font-size: 15pt;
+    font-weight: 500; 
+    margin-top: 10px;
+    margin-bottom: 20px;
+ }
+ .amazonlink {
+    margin-left: 100px;
+    margin-top: 10px;
+}
+#buy_link{
+    font-size: 20pt;
+    text-decoration: none;
+    color: var(--main-color);
+    border: 2px solid var(--secondly-color);
+    border-radius: 5px;
+    background: var(--forthly-color);
+}
+.rate{
+    margin-left: 100px;
+    font-size: 20pt;
 }
