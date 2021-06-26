@@ -20,6 +20,7 @@ html *{
 body{
     margin-bottom: 0;
     min-height: 100vh;
+    min-width: 100vh;
 }   
 .logo {
     margin: 0 10px 0 30px;
@@ -302,7 +303,7 @@ footer{
 
 }
 .description_books{
-   width: 1450px;
+   width: 1600px;
    height: 420px;
    margin-left: 100px;
   
@@ -331,7 +332,4 @@ footer{
     border-radius: 5px;
     background: var(--forthly-color);
 }
-.rate{
-    margin-left: 100px;
-    font-size: 20pt;
-}
+
