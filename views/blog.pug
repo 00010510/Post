@@ -1,0 +1,18 @@
+extends layout.pug 
+
+block Navigation
+
+  .container_blog 
+     a(href='/blog' class="blogs_titles" id="blog") Blog 
+     a(href='/blogs' class="blogs_titles" id="allblogs") All Blogs
+
+  form.form_blog(action="/blog" method='POST')
+   if error
+     p#error Fields are empty!
+
+   if success
+     p#success Blog is posted!
+
+   input.blog_input(type='text' name="title" placeholder ="Title" id="input_title")
+   textarea.blog_input(type="text" name="text" placeholder="You write here" id="textarea_blog")
+   button.btn_blog Send

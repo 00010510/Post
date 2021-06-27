@@ -6,12 +6,13 @@
     --forthly-color:rgb(149, 69, 53); 
 }
 
-
-
+/*-- BOOKS STYLES---*/
+           /* STAR RATING FORM*/
 .container_books_rating {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 85px;
 }
 .rating_wrap{
     box-sizing: border-box;
@@ -80,3 +81,5 @@ li a{
     visibility: visible;
     display: block;
 }
+
+        /* COMMENT FORM */

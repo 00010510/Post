@@ -1,0 +1,133 @@
+:root{
+    --main-bg-color:rgb(250, 235, 215);
+    --main-color: rgb(244, 246, 246);
+    --secondly-color: rgb(33,33,33);
+    --thirdly-color: rgb(169,169,169);
+    --forthly-color:rgb(149, 69, 53); 
+}
+.container_blog {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.blogs_titles{
+    display: inline;
+    margin-left: 40px;
+    text-decoration: none;
+    color: var(--secondly-color);
+    font-size: 20pt;
+    font-weight: 700;
+  
+}
+.blog_input{
+    display: block;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  
+}
+#input_title{
+    width: 300px;
+    height: 30px;
+    font-size: 15pt;
+    border: 2px solid var(--secondly-color);
+}
+#textarea_blog{
+    width: 1316px;
+    height: 406px;
+    font-size: 15pt;
+    border: 2px solid var(--secondly-color);
+}
+.btn_blog{
+    margin-left: 1280px;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    font-size: 15pt;
+    border: 2px solid var(--secondly-color);
+    background: var(--forthly-color);
+    color: var(--main-color);
+}
+#allblogs{
+    border: 2px solid var(--secondly-color);
+    border-radius: 5px;
+    background: var(--thirdly-color);
+    color: var(--main-color);
+}
+#blog{
+    border: 2px solid var(--secondly-color);
+    border-radius: 5px;
+    background: var(--thirdly-color);
+    color: var(--main-color);
+}
+#error{
+ display: inline;
+  width: 100px;
+  height: 50px;
+  border: 2px solid red;
+  color: red;
+  margin-left: 40px;
+  font-size: 20pt;
+  margin-bottom: 20px;
+}
+#success{
+    display: inline;
+    width: 100px;   
+    height: 50px;
+    border: 2px solid green;
+    color: green;
+    margin-left: 40px;
+    font-size: 20pt;
+    margin-bottom: 20px;
+}
+
+/* All blogs Style*/
+.container_all{
+    margin-top: 40px;
+}
+.blog_wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    margin-top: 30px;
+    max-width: 70%;
+    margin-left: -225px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--thirdly-color);  
+   
+}
+.delete{
+    text-decoration: none;
+    background: var(--forthly-color);
+    color: var(--main-color);
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    text-transform: capitalize;
+    border-radius: 5px;
+    font-weight: 700;
+}
+.blog{
+    text-decoration: none;
+    font-size: 15pt;
+    color: var(--secondly-color);
+    font-weight: 700 ;
+    padding: 10px 5px; 
+    
+}
+/* DETAIL PAGE STYLES*/
+.container_detail{
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 1903;
+    height: 100vh;
+}
+.title{
+    font-size: 25pt;
+    font-weight: 700;
+}
+.text{
+    font-size: 15pt;
+    text-transform: capitalize;
+}

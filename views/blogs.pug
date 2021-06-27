@@ -1,0 +1,11 @@
+extends layout.pug 
+
+block Navigation
+
+    .container_all
+     a(href='/blogs' class="blogs_titles" id="allblogs") All Blogs
+
+    each blog in blogs   
+     .blog_wrap
+       a.blog(href=`/blogs/ ${blogs.id}`) #{blog.title}
+       a.delete(href="#") delete
