@@ -6,7 +6,6 @@ const fs = require ('fs')
 app.set('view engine', 'pug')
 
 app.use(express.static(__dirname + '/public'));
-var path = require('path')
 
 app.use(express.urlencoded({ extended: false }))
 
@@ -30,59 +29,67 @@ app.get('/Sign', (req, res) => {
     res.render('Sign')
 })
 
-app.get('/blog', (req, res) => {
-    res.render('blog')
+app.get('/Create_blog', (req, res) => {
+    res.render('Create_blog')
 })
 
-app.post('/blog', (req, res) => {
-
+app.post('/Create_blog', (req, res) => {
+     
     const title = req.body.title
     const text = req.body.text
     
-    if(title.trim() === '' && text.trim() === '') {
-        res.render('blog', { error: true })
-    } else{
-        fs.readFile('./data/notes.json', (err, data) => {
-            if(err) throw err
-
+    if (title.trim() === '' && text.trim() === ''){
+        res.render('/Create_blog', {error: true})
+    } else {
+        fs.readFile('./data/notes.json', (err, data) =>{
+            if (err) throw err
+            
             const blogs = JSON.parse(data)
 
             blogs.push({
-                id: id(),
+                id: id (),
                 title: title,
                 text: text,
             })
+         
 
-            fs.writeFile('./data/notes.json', JSON.stringify(blogs), err => {
-                if (err) throw err
+            fs.writeFile('./data/notes.json', JSON.stringify(blogs), err =>{
+                if(err) throw err
 
-                res.render('blog', {success: true})
-           
+                res.render('Create_blog', {success: true})
             })
-        }) 
+        })
     }
-    
-
 })
-
 
 
 app.get('/blogs', (req, res) => {
-    
-
-    fs.readFile('./data/notes.json', (err, data) => {
-        if (err) throw err
-
-        const blogs = JSON.parse(data)
+    fs.readFile('./data/notes.json', (err, data) =>{
+        if(err) throw err
         
+        const blogs = JSON.parse(data)
         res.render('blogs',{ blogs: blogs})
     })
- 
 })
+      
+   
 
 
-app.get('/blogs/detail', (req, res) => {
-    res.render( 'detail')
+
+app.get('/blogs/:id', (req, res) => {
+        const id = req.params.id
+        fs.readFile('./data/notes.json', (err, data) =>{
+            if(err) throw err
+            
+            const blogs = JSON.parse(data)
+
+            const blog = blogs.filter(blog => blog.id ==id)[0]
+            
+            res.render( 'detail', {blog: blog})
+        })
+
+     
+
 })
 
 app.get('/book1_fan', (req, res) => {
@@ -98,6 +105,5 @@ app.listen(5000, err =>{
 });
 
 function id () {
-    
     return '_' + Math.random().toString(36).substr(2, 9);
-};
+ };

@@ -13,8 +13,7 @@ html{
     background-color: var(--main-color);
 }
 html *{
-    margin-left: auto;
-   margin-right: auto;
+    margin: 0;
    scroll-behavior: smooth;
 }
 body{

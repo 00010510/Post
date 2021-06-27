@@ -3,10 +3,10 @@ extends layout.pug
 block Navigation
 
   .container_blog 
-     a(href='/blog' class="blogs_titles" id="blog") Blog 
+     a(href='/Create_blog' class="blogs_titles" id="blog") Blog 
      a(href='/blogs' class="blogs_titles" id="allblogs") All Blogs
 
-  form.form_blog(action="/blog" method='POST')
+  form.form_blog(action="/Create_blog" method='POST')
    if error
      p#error Fields are empty!
 
