@@ -3,9 +3,10 @@ extends layout.pug
 block Navigation
 
     .container_all
+     a(href='/Create_blog' class="blogs_titles" id="blog") Blog 
      a(href='/blogs' class="blogs_titles" id="allblogs") All Blogs
 
     each blog in blogs   
      .blog_wrap
-       a.blog(href=`/blogs/${blog.id}`) #{blog.title} 
+       a.blog(href=`/blogs/${blog.id}`) #{blog.title}
        a.delete(href="#") delete
