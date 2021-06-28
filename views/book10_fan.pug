@@ -1,0 +1,36 @@
+extends layout.pug 
+
+block Navigation
+ 
+
+ .book_info 
+    img(src="/images/fantasy/Harry.jpg", alt="HarryPotter" class="book_img")
+ .description_books
+    h1.title_b The Lies of Locke Lamora.
+    hr
+    <p class="description"> An orphan’s life is harsh—and often short—in the mysterious island city of Camorr. But young Locke Lamora dodges death and slavery, becoming a thief under the tutelage of a gifted con artist. As leader of the band of light-fingered brothers known as the Gentleman Bastards, Locke is soon infamous, fooling even the underworld’s most feared ruler. But in the shadows lurks someone still more ambitious and deadly. Faced with a bloody coup that threatens to destroy everyone and everything that holds meaning in his mercenary life, Locke vows to beat the enemy at his own brutal game—or die trying.
+    </p>
+    hr
+ .amazonlink 
+    a(href="http://amazon.com", id="buy_link") Get on Amazon! 
+ .container_books_rating
+     <div class="rating_wrap" id="rating_wrap">
+       <h2 onclick = "toggleClass()"> Rate the book here <span>+</span></h2>
+       
+        <ol>
+         <li><a href="#" class="star1" onclick="stars1();"><span class="fas fa-star"></span></a></li>
+         <li><a href="#" class="star2" onclick="stars2();"><span class="fas fa-star"></span></a></li>
+         <li><a href="#" class="star3" onclick="stars3();"><span class="fas fa-star"></span></a></li>
+         <li><a href="#" class="star4" onclick="stars4();"><span class="fas fa-star"></span></a></li>
+         <li><a href="#" class="star5" onclick="stars5();"><span class="fas fa-star"></span></a></li>
+        .msg 
+         <p class="p1"><span class="fas fa-sad-cry fa-2x"></span>
+         <p class="p2"><span class="fas fa-sad-tear fa-2x"></span>
+         <p class="p3"><span class="fas fa-meh fa-2x"></span>
+         <p class="p4"><span class="fas fa-smile-beam fa-2x"></span>
+         <p class="p5"><span class="fas fa-grin-stars fa-2x"></span>
+         </div>
+       
+         <script type="text/javascript" src="/scripts/star_rating.js"></script>
+
+

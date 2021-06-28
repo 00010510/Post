@@ -1,0 +1,38 @@
+extends layout.pug 
+
+block Navigation
+ 
+
+ .book_info 
+    img(src="/images/fantasy/Harry.jpg", alt="HarryPotter" class="book_img")
+ .description_books
+    h1.title_b Jonathan Strange & Mr Norrell. 
+    hr
+    <p class="description"> Sophisticated, witty, and ingeniously convincing, Susanna Clarke's magisterial novel weaves magic into a flawlessly detailed vision of historical England. She has created a world so thoroughly enchanting that eight hundred pages leave readers longing for more.   
+English magicians were once the wonder of the known world, with fairy servants at their beck and call; they could command winds, mountains, and woods. But by the early 1800s they have long since lost the ability to perform magic. They can only write long, dull papers about it, while fairy servants are nothing but a fading memory.
+But at Hurtfew Abbey in Yorkshire, the rich, reclusive Mr Norrell has assembled a wonderful library of lost and forgotten books from England's magical past and regained some of the powers of England's magicians. He goes to London and raises a beautiful young woman from the dead. Soon he is lending his help to the government in the war against Napoleon Bonaparte, creating ghostly fleets of rain-ships to confuse and alarm the French.
+    </p>
+    hr
+ .amazonlink 
+    a(href="http://amazon.com", id="buy_link") Get on Amazon! 
+ .container_books_rating
+     <div class="rating_wrap" id="rating_wrap">
+       <h2 onclick = "toggleClass()"> Rate the book here <span>+</span></h2>
+       
+        <ol>
+         <li><a href="#" class="star1" onclick="stars1();"><span class="fas fa-star"></span></a></li>
+         <li><a href="#" class="star2" onclick="stars2();"><span class="fas fa-star"></span></a></li>
+         <li><a href="#" class="star3" onclick="stars3();"><span class="fas fa-star"></span></a></li>
+         <li><a href="#" class="star4" onclick="stars4();"><span class="fas fa-star"></span></a></li>
+         <li><a href="#" class="star5" onclick="stars5();"><span class="fas fa-star"></span></a></li>
+        .msg 
+         <p class="p1"><span class="fas fa-sad-cry fa-2x"></span>
+         <p class="p2"><span class="fas fa-sad-tear fa-2x"></span>
+         <p class="p3"><span class="fas fa-meh fa-2x"></span>
+         <p class="p4"><span class="fas fa-smile-beam fa-2x"></span>
+         <p class="p5"><span class="fas fa-grin-stars fa-2x"></span>
+         </div>
+       
+         <script type="text/javascript" src="/scripts/star_rating.js"></script>
+
+

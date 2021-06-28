@@ -1,0 +1,36 @@
+extends layout.pug 
+
+block Navigation
+ 
+
+ .book_info 
+    img(src="/images/fantasy/Harry.jpg", alt="HarryPotter" class="book_img")
+ .description_books
+    h1.title_b A Game of Thrones.
+    hr
+    <p class="description"> Winter is coming. Such is the stern motto of House Stark, the northernmost of the fiefdoms that owe allegiance to King Robert Baratheon in far-off King’s Landing. There Eddard Stark of Winterfell rules in Robert’s name. There his family dwells in peace and comfort: his proud wife, Catelyn; his sons Robb, Brandon, and Rickon; his daughters Sansa and Arya; and his bastard son, Jon Snow. Far to the north, behind the towering Wall, lie savage Wildings and worse—unnatural things relegated to myth during the centuries-long summer, but proving all too real and all too deadly in the turning of the season.
+                            Yet a more immediate threat lurks to the south, where Jon Arryn, the Hand of the King, has died under mysterious circumstances. Now Robert is riding north to Winterfell, bringing his queen, the lovely but cold Cersei, his son, the cruel, vainglorious Prince Joffrey, and the queen’s brothers Jaime and Tyrion of the powerful and wealthy House Lannister—the first a swordsman without equal, the second a dwarf whose stunted stature belies a brilliant mind. All are heading for Winterfell and a fateful encounter that will change the course of kingdoms. 
+                            Meanwhile , across the Narrow Sea, Prince Viserys, heir of the fallen House Targaryen, which once ruled all of Westeros, schemes to reclaim the throne with an army of barbarian Dothraki—whose loyalty he will purchase in the only coin left to him: his beautiful yet innocent sister, Daenerys.
+    </p>
+    hr
+ .amazonlink 
+    a(href="http://amazon.com", id="buy_link") Get on Amazon! 
+ .container_books_rating
+     <div class="rating_wrap" id="rating_wrap">
+       <h2 onclick = "toggleClass()"> Rate the book here <span>+</span></h2>
+       
+        <ol>
+         <li><a href="#" class="star1" onclick="stars1();"><span class="fas fa-star"></span></a></li>
+         <li><a href="#" class="star2" onclick="stars2();"><span class="fas fa-star"></span></a></li>
+         <li><a href="#" class="star3" onclick="stars3();"><span class="fas fa-star"></span></a></li>
+         <li><a href="#" class="star4" onclick="stars4();"><span class="fas fa-star"></span></a></li>
+         <li><a href="#" class="star5" onclick="stars5();"><span class="fas fa-star"></span></a></li>
+        .msg 
+         <p class="p1"><span class="fas fa-sad-cry fa-2x"></span>
+         <p class="p2"><span class="fas fa-sad-tear fa-2x"></span>
+         <p class="p3"><span class="fas fa-meh fa-2x"></span>
+         <p class="p4"><span class="fas fa-smile-beam fa-2x"></span>
+         <p class="p5"><span class="fas fa-grin-stars fa-2x"></span>
+         </div>
+       
+         <script type="text/javascript" src="/scripts/star_rating.js"></script>

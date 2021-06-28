@@ -1,0 +1,36 @@
+extends layout.pug 
+
+block Navigation
+ 
+
+ .book_info 
+    img(src="/images/fantasy/Harry.jpg", alt="HarryPotter" class="book_img")
+ .description_books
+    h1.title_b The Lord of the Rings.
+    hr
+    <p class="description"> One Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkeness bind them
+                            In ancient times the Rings of Power were crafted by the Elven-smiths, and Sauron, The Dark Lord, forged the One Ring, filling it with his own power so that he could rule all others. But the One Ring was taken from him, and though he sought it throughout Middle-earth, it remained lost to him. After many ages it fell into the hands of Bilbo Baggins, as told in The Hobbit.
+                            In a sleepy village in the Shire, young Frodo Baggins finds himself faced with an immense task, as his elderly cousin Bilbo entrusts the Ring to his care. Frodo must leave his home and make a perilous journey across Middle-earth to the Cracks of Doom, there to destroy the Ring and foil the Dark Lord in his evil purpose. 
+    </p>
+    hr
+ .amazonlink 
+    a(href="http://amazon.com", id="buy_link") Get on Amazon! 
+ .container_books_rating
+     <div class="rating_wrap" id="rating_wrap">
+       <h2 onclick = "toggleClass()"> Rate the book here <span>+</span></h2>
+       
+        <ol>
+         <li><a href="#" class="star1" onclick="stars1();"><span class="fas fa-star"></span></a></li>
+         <li><a href="#" class="star2" onclick="stars2();"><span class="fas fa-star"></span></a></li>
+         <li><a href="#" class="star3" onclick="stars3();"><span class="fas fa-star"></span></a></li>
+         <li><a href="#" class="star4" onclick="stars4();"><span class="fas fa-star"></span></a></li>
+         <li><a href="#" class="star5" onclick="stars5();"><span class="fas fa-star"></span></a></li>
+        .msg 
+         <p class="p1"><span class="fas fa-sad-cry fa-2x"></span>
+         <p class="p2"><span class="fas fa-sad-tear fa-2x"></span>
+         <p class="p3"><span class="fas fa-meh fa-2x"></span>
+         <p class="p4"><span class="fas fa-smile-beam fa-2x"></span>
+         <p class="p5"><span class="fas fa-grin-stars fa-2x"></span>
+         </div>
+       
+         <script type="text/javascript" src="/scripts/star_rating.js"></script>

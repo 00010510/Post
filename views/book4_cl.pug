@@ -1,0 +1,35 @@
+extends layout.pug 
+
+block Navigation
+ 
+
+ .book_info 
+    img(src="/images/fantasy/Harry.jpg", alt="HarryPotter" class="book_img")
+ .description_books
+    h1.title_b Anna Karenina.
+    hr
+    <p class="description"> Acclaimed by many as the world's greatest novel, Anna Karenina provides a vast panorama of contemporary life in Russia and of humanity in general. In it Tolstoy uses his intense imaginative insight to create some of the most memorable characters in all of literature. Anna is a sophisticated woman who abandons her empty existence as the wife of Karenin and turns to Count Vronsky to fulfil her passionate nature - with tragic consequences. Levin is a reflection of Tolstoy himself, often expressing the author's own views and convictions.
+Throughout, Tolstoy points no moral, merely inviting us not to judge but to watch. As Rosemary Edmonds comments, 'He leaves the shifting patterns of the kaleidoscope to bring home the meaning of the brooding words following the title, 'Vengeance is mine, and I will repay. 
+    </p>    
+    hr
+ .amazonlink 
+    a(href="http://amazon.com", id="buy_link") Get on Amazon! 
+ .container_books_rating
+     <div class="rating_wrap" id="rating_wrap">
+       <h2 onclick = "toggleClass()"> Rate the book here <span>+</span></h2>
+       
+        <ol>
+         <li><a href="#" class="star1" onclick="stars1();"><span class="fas fa-star"></span></a></li>
+         <li><a href="#" class="star2" onclick="stars2();"><span class="fas fa-star"></span></a></li>
+         <li><a href="#" class="star3" onclick="stars3();"><span class="fas fa-star"></span></a></li>
+         <li><a href="#" class="star4" onclick="stars4();"><span class="fas fa-star"></span></a></li>
+         <li><a href="#" class="star5" onclick="stars5();"><span class="fas fa-star"></span></a></li>
+        .msg 
+         <p class="p1"><span class="fas fa-sad-cry fa-2x"></span>
+         <p class="p2"><span class="fas fa-sad-tear fa-2x"></span>
+         <p class="p3"><span class="fas fa-meh fa-2x"></span>
+         <p class="p4"><span class="fas fa-smile-beam fa-2x"></span>
+         <p class="p5"><span class="fas fa-grin-stars fa-2x"></span>
+         </div>
+       
+         <script type="text/javascript" src="/scripts/star_rating.js"></script>

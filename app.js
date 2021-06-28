@@ -84,7 +84,7 @@ app.get('/blogs/:id', (req, res) => {
             const blogs = JSON.parse(data)
 
             const blog = blogs.filter(blog => blog.id ==id)[0]
-            
+
             res.render( 'detail', {blog: blog})
         })
 
@@ -95,8 +95,64 @@ app.get('/blogs/:id', (req, res) => {
 app.get('/book1_fan', (req, res) => {
     res.render('book1_fan')
 })
+app.get('/book2_fan', (req, res) => {
+    res.render('book2_fan')
+})
+app.get('/book3_fan', (req, res) => {
+    res.render('book3_fan')
+})
+app.get('/book4_fan', (req, res) => {
+    res.render('book4_fan')
+})
+app.get('/book5_fan', (req, res) => {
+    res.render('book5_fan')
+})
+app.get('/book6_fan', (req, res) => {
+    res.render('book6_fan')
+})
+app.get('/book7_fan', (req, res) => {
+    res.render('book7_fan')
+})
+app.get('/book8_fan', (req, res) => {
+    res.render('book8_fan')
+})
+app.get('/book9_fan', (req, res) => {
+    res.render('book9_fan')
+})
+app.get('/book10_fan', (req, res) => {
+    res.render('book10_fan')
+})
+app.get('/book1_cl', (req, res) => {
+    res.render('book1_cl')
+})
+app.get('/book2_cl', (req, res) => {
+    res.render('book2_cl')
+})
+app.get('/book3_cl', (req, res) => {
+    res.render('book3_cl')
+})
+app.get('/book4_cl', (req, res) => {
+    res.render('book4_cl')
+})
+app.get('/book5_cl', (req, res) => {
+    res.render('book5_cl')
+})
+app.get('/book6_cl', (req, res) => {
+    res.render('book6_cl')
+})
+app.get('/book7_cl', (req, res) => {
+    res.render('book7_cl')
+})
+app.get('/book8_cl', (req, res) => {
+    res.render('book8_cl')
+})
+app.get('/book9_cl', (req, res) => {
+    res.render('book9_cl')
+})
+app.get('/book10_cl', (req, res) => {
+    res.render('book10_cl')
+})
 
-    
 
 app.listen(5000, err =>{
     if(err) console.log(err)

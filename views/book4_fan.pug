@@ -1,0 +1,35 @@
+extends layout.pug 
+
+block Navigation
+ 
+
+ .book_info 
+    img(src="/images/fantasy/Harry.jpg", alt="HarryPotter" class="book_img")
+ .description_books
+    h1.title_b The Sword in the Stone.
+    hr
+    <p class="description"> Learn. That is the only thing that never fails."--Merlyn the Wizard. Before there was a famous king named Arthur, there was a curious boy named Wart and a kind old wizard named Merlyn. Transformed by Merlyn into the forms of his fantasy, Wart learns the value of history from a snake, of education from a badger, and of courage from a hawk--the lessons that help turn a boy into a man. 
+                           Together , Wart and Merlyn take the reader through this timeless story of childhood and adventure--The Sword in the Stone. T.H. White's classic tale of the young Arthur's questioning and discovery of his life is unparalleled for its wit and wisdom, and for its colorful characters, from the wise Merlyn to the heroic Robin Wood to the warmhearted King Pellinore.
+    </p>    
+    hr
+ .amazonlink 
+    a(href="http://amazon.com", id="buy_link") Get on Amazon! 
+ .container_books_rating
+     <div class="rating_wrap" id="rating_wrap">
+       <h2 onclick = "toggleClass()"> Rate the book here <span>+</span></h2>
+       
+        <ol>
+         <li><a href="#" class="star1" onclick="stars1();"><span class="fas fa-star"></span></a></li>
+         <li><a href="#" class="star2" onclick="stars2();"><span class="fas fa-star"></span></a></li>
+         <li><a href="#" class="star3" onclick="stars3();"><span class="fas fa-star"></span></a></li>
+         <li><a href="#" class="star4" onclick="stars4();"><span class="fas fa-star"></span></a></li>
+         <li><a href="#" class="star5" onclick="stars5();"><span class="fas fa-star"></span></a></li>
+        .msg 
+         <p class="p1"><span class="fas fa-sad-cry fa-2x"></span>
+         <p class="p2"><span class="fas fa-sad-tear fa-2x"></span>
+         <p class="p3"><span class="fas fa-meh fa-2x"></span>
+         <p class="p4"><span class="fas fa-smile-beam fa-2x"></span>
+         <p class="p5"><span class="fas fa-grin-stars fa-2x"></span>
+         </div>
+       
+         <script type="text/javascript" src="/scripts/star_rating.js"></script>
